@@ -305,13 +305,13 @@ class HealthCheck extends react_1.Component {
             const results = [];
             results.push({
                 id: 0,
-                title: 'Check Wazuh API connection',
+                title: 'Check Quintom API connection',
                 description: checks.api ? react_1.default.createElement("span", null,
                     react_1.default.createElement(eui_1.EuiLoadingSpinner, { size: "m" }),
                     " Checking...") : 'Disabled'
             }, {
                 id: 1,
-                title: 'Check for Wazuh API version',
+                title: 'Check for Quintom API version',
                 description: checks.setup ? react_1.default.createElement("span", null,
                     react_1.default.createElement(eui_1.EuiLoadingSpinner, { size: "m" }),
                     " Checking...") : 'Disabled'
