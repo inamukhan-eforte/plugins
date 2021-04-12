@@ -128,10 +128,10 @@ export class WazuhReportingCtrl {
         columns: [
           {
             image: path.join(__dirname, '../../public/img/logo.png'),
-            width: 190
+            width: 260
           },
           {
-            text: 'info@wazuh.com\nhttps://wazuh.com',
+            text: 'info@quintom.com\nhttp://www.quintom.com/',
             alignment: 'right',
             margin: [0, 0, 40, 0],
             color: '#00a9e5'
@@ -143,7 +143,7 @@ export class WazuhReportingCtrl {
         return {
           columns: [
             {
-              text: 'Copyright © 2020 Wazuh, Inc.',
+              text: 'Copyright © 2021 Quintom',
               color: '#00a9e5',
               margin: [40, 40, 0, 0]
             },

@@ -166,7 +166,7 @@ export class WazuhApiCtrl {
       // Look for socket-related errors
       if (this.checkResponseIsDown(responseManagerInfo)) {
         return ErrorResponse(
-          `ERROR3099 - ${responseManagerInfo.data.detail || 'Wazuh not ready yet'}`,
+          `ERROR3099 - ${responseManagerInfo.data.detail || 'Quintom not ready yet'}`,
           3099,
           500,
           reply
