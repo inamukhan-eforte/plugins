@@ -56,7 +56,8 @@ export class WzStatusNodeInfo extends Component {
         </EuiFlexGroup>
         <EuiFlexGroup>
           <EuiFlexItem>Version</EuiFlexItem>
-          <EuiFlexItem style={greyStyle}>{nodeInfo.version}</EuiFlexItem>
+          {/* <EuiFlexItem style={greyStyle}>{nodeInfo.version}</EuiFlexItem> */}
+										<EuiFlexItem style={greyStyle}>1.0.0</EuiFlexItem>
         </EuiFlexGroup>
         <EuiFlexGroup>
           <EuiFlexItem>Compilation date</EuiFlexItem>

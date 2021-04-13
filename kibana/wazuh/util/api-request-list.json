@@ -905,7 +905,7 @@
       {
         "name": "/cluster/:node_id/configuration",
         "documentation": "https://documentation.wazuh.com/current/user-manual/api/reference.html#operation/api.controllers.cluster_controller.get_configuration_node",
-        "description": "Return wazuh configuration used in node {node_id}",
+        "description": "Return quintom configuration used in node {node_id}",
         "summary": "Get a specified node's configuration",
         "tags": [
           "cluster"
@@ -940,7 +940,7 @@
           },
           {
             "name": "section",
-            "description": "Indicates the wazuh configuration section",
+            "description": "Indicates the quintom configuration section",
             "schema": {
               "type": "string",
               "enum": [
@@ -1106,7 +1106,7 @@
         "query": [
           {
             "name": "path",
-            "description": "Filepath to return file. (Relative to wazuh installation folder)",
+            "description": "Filepath to return file. (Relative to quintom installation folder)",
             "required": true,
             "schema": {
               "type": "string",
@@ -1172,8 +1172,8 @@
       {
         "name": "/cluster/:node_id/logs",
         "documentation": "https://documentation.wazuh.com/current/user-manual/api/reference.html#operation/api.controllers.cluster_controller.get_log_node",
-        "description": "Return the last 2000 wazuh log entries in node {node_id}",
-        "summary": "Get a specified node's wazuh logs",
+        "description": "Return the last 2000 quintom log entries in node {node_id}",
+        "summary": "Get a specified node's quintom logs",
         "tags": [
           "cluster"
         ],
@@ -1258,7 +1258,7 @@
           },
           {
             "name": "tag",
-            "description": "Wazuh component that logged the event",
+            "description": "Quintom component that logged the event",
             "schema": {
               "type": "string",
               "enum": [
@@ -1309,8 +1309,8 @@
       {
         "name": "/cluster/:node_id/logs/summary",
         "documentation": "https://documentation.wazuh.com/current/user-manual/api/reference.html#operation/api.controllers.cluster_controller.get_log_summary_node",
-        "description": "Return a summary of the last 2000 wazuh log entries in node {node_id}",
-        "summary": "Get a summary of a specified node's wazuh logs",
+        "description": "Return a summary of the last 2000 quintom log entries in node {node_id}",
+        "summary": "Get a summary of a specified node's quintom logs",
         "tags": [
           "cluster"
         ],
@@ -1347,7 +1347,7 @@
       {
         "name": "/cluster/:node_id/stats",
         "documentation": "https://documentation.wazuh.com/current/user-manual/api/reference.html#operation/api.controllers.cluster_controller.get_stats_node",
-        "description": "Return Wazuh statistical information in node {node_id} for the current or specified date",
+        "description": "Return quintom statistical information in node {node_id} for the current or specified date",
         "summary": "Get a specified node's stats",
         "tags": [
           "cluster"
@@ -1393,7 +1393,7 @@
       {
         "name": "/cluster/:node_id/stats/analysisd",
         "documentation": "https://documentation.wazuh.com/current/user-manual/api/reference.html#operation/api.controllers.cluster_controller.get_stats_analysisd_node",
-        "description": "Return Wazuh analysisd statistical information in node {node_id}",
+        "description": "Return quintom analysisd statistical information in node {node_id}",
         "summary": "Get a specified node's analysisd stats",
         "tags": [
           "cluster"
@@ -1431,7 +1431,7 @@
       {
         "name": "/cluster/:node_id/stats/hourly",
         "documentation": "https://documentation.wazuh.com/current/user-manual/api/reference.html#operation/api.controllers.cluster_controller.get_stats_hourly_node",
-        "description": "Return Wazuh statistical information in node {node_id} per hour. Each number in the averages field represents the average of alerts per hour",
+        "description": "Return quintom statistical information in node {node_id} per hour. Each number in the averages field represents the average of alerts per hour",
         "summary": "Get a specified node's stats per hour",
         "tags": [
           "cluster"
@@ -1469,7 +1469,7 @@
       {
         "name": "/cluster/:node_id/stats/remoted",
         "documentation": "https://documentation.wazuh.com/current/user-manual/api/reference.html#operation/api.controllers.cluster_controller.get_stats_remoted_node",
-        "description": "Return Wazuh remoted statistical information in node {node_id}",
+        "description": "Return quintom remoted statistical information in node {node_id}",
         "summary": "Get a specified node's remoted stats",
         "tags": [
           "cluster"
@@ -1507,7 +1507,7 @@
       {
         "name": "/cluster/:node_id/stats/weekly",
         "documentation": "https://documentation.wazuh.com/current/user-manual/api/reference.html#operation/api.controllers.cluster_controller.get_stats_weekly_node",
-        "description": "Return Wazuh statistical information in node {node_id} per week. Each number in the averages field represents the average of alerts per hour for that specific day",
+        "description": "Return quintom statistical information in node {node_id} per week. Each number in the averages field represents the average of alerts per hour for that specific day",
         "summary": "Get a specified node's stats per week",
         "tags": [
           "cluster"
@@ -1545,7 +1545,7 @@
       {
         "name": "/cluster/:node_id/status",
         "documentation": "https://documentation.wazuh.com/current/user-manual/api/reference.html#operation/api.controllers.cluster_controller.get_status_node",
-        "description": "Return the status of all Wazuh daemons in node node_id",
+        "description": "Return the status of all quintom daemons in node node_id",
         "summary": "Get a specified node's status",
         "tags": [
           "cluster"
@@ -1620,8 +1620,8 @@
       {
         "name": "/cluster/configuration/validation",
         "documentation": "https://documentation.wazuh.com/current/user-manual/api/reference.html#operation/api.controllers.cluster_controller.get_conf_validation",
-        "description": "Return whether the Wazuh configuration is correct or not in all cluster nodes or a list of them",
-        "summary": "Check cluster nodes Wazuh configuration",
+        "description": "Return whether the quintom configuration is correct or not in all cluster nodes or a list of them",
+        "summary": "Check cluster nodes quintom configuration",
         "tags": [
           "cluster"
         ],
@@ -2003,7 +2003,7 @@
       {
         "name": "/decoders/files",
         "documentation": "https://documentation.wazuh.com/current/user-manual/api/reference.html#operation/api.controllers.decoders_controller.get_decoders_files",
-        "description": "Return information about all decoders files used in Wazuh. This information include decoder's file, decoder's route and decoder's status among others",
+        "description": "Return information about all decoders files used in quintom. This information include decoder's file, decoder's route and decoder's status among others",
         "summary": "Get all decoders files",
         "tags": [
           "decoders"
@@ -4359,7 +4359,7 @@
       {
         "name": "/manager/configuration",
         "documentation": "https://documentation.wazuh.com/current/user-manual/api/reference.html#operation/api.controllers.manager_controller.get_configuration",
-        "description": "Return wazuh configuration used",
+        "description": "Return quintom configuration used",
         "summary": "Get configuration",
         "tags": [
           "manager"
@@ -4383,7 +4383,7 @@
           },
           {
             "name": "section",
-            "description": "Indicates the wazuh configuration section",
+            "description": "Indicates the quintom configuration section",
             "schema": {
               "type": "string",
               "enum": [
@@ -4521,8 +4521,8 @@
       {
         "name": "/manager/configuration/validation",
         "documentation": "https://documentation.wazuh.com/current/user-manual/api/reference.html#operation/api.controllers.manager_controller.get_conf_validation",
-        "description": "Return whether the Wazuh configuration is correct",
-        "summary": "Check Wazuh configuration",
+        "description": "Return whether the quintom configuration is correct",
+        "summary": "Check quintom configuration",
         "tags": [
           "manager"
         ],
@@ -4556,7 +4556,7 @@
         "query": [
           {
             "name": "path",
-            "description": "Filepath to return file. (Relative to wazuh installation folder)",
+            "description": "Filepath to return file. (Relative to quintom installation folder)",
             "required": true,
             "schema": {
               "type": "string",
@@ -4585,7 +4585,7 @@
         "name": "/manager/info",
         "documentation": "https://documentation.wazuh.com/current/user-manual/api/reference.html#operation/api.controllers.manager_controller.get_info",
         "description": "Return basic information such as version, compilation date, installation path",
-        "summary": "Get Wazuh manager information",
+        "summary": "Get quintom manager information",
         "tags": [
           "manager"
         ],
@@ -4611,8 +4611,8 @@
       {
         "name": "/manager/logs",
         "documentation": "https://documentation.wazuh.com/current/user-manual/api/reference.html#operation/api.controllers.manager_controller.get_log",
-        "description": "Return the last 2000 wazuh log entries",
-        "summary": "Get the wazuh manager logs",
+        "description": "Return the last 2000 quintom log entries",
+        "summary": "Get the quintom manager logs",
         "tags": [
           "manager"
         ],
@@ -4686,7 +4686,7 @@
           },
           {
             "name": "tag",
-            "description": "Wazuh component that logged the event",
+            "description": "quintom component that logged the event",
             "schema": {
               "type": "string",
               "enum": [
@@ -4737,8 +4737,8 @@
       {
         "name": "/manager/logs/summary",
         "documentation": "https://documentation.wazuh.com/current/user-manual/api/reference.html#operation/api.controllers.manager_controller.get_log_summary",
-        "description": "Return a summary of the last 2000 wazuh log entries",
-        "summary": "Get a summary of the wazuh manager logs",
+        "description": "Return a summary of the last 2000 quintom log entries",
+        "summary": "Get a summary of the quintom manager logs",
         "tags": [
           "manager"
         ],
@@ -4764,7 +4764,7 @@
       {
         "name": "/manager/stats",
         "documentation": "https://documentation.wazuh.com/current/user-manual/api/reference.html#operation/api.controllers.manager_controller.get_stats",
-        "description": "Return Wazuh statistical information for the current or specified date",
+        "description": "Return quintom statistical information for the current or specified date",
         "summary": "Get stats",
         "tags": [
           "manager"
@@ -4799,7 +4799,7 @@
       {
         "name": "/manager/stats/analysisd",
         "documentation": "https://documentation.wazuh.com/current/user-manual/api/reference.html#operation/api.controllers.manager_controller.get_stats_analysisd",
-        "description": "Return Wazuh analysisd statistical information",
+        "description": "Return quintom analysisd statistical information",
         "summary": "Get analysisd stats",
         "tags": [
           "manager"
@@ -4826,7 +4826,7 @@
       {
         "name": "/manager/stats/hourly",
         "documentation": "https://documentation.wazuh.com/current/user-manual/api/reference.html#operation/api.controllers.manager_controller.get_stats_hourly",
-        "description": "Return Wazuh statistical information per hour. Each number in the averages field represents the average of alerts per hour",
+        "description": "Return quintom statistical information per hour. Each number in the averages field represents the average of alerts per hour",
         "summary": "Get stats by hour",
         "tags": [
           "manager"
@@ -4853,7 +4853,7 @@
       {
         "name": "/manager/stats/remoted",
         "documentation": "https://documentation.wazuh.com/current/user-manual/api/reference.html#operation/api.controllers.manager_controller.get_stats_remoted",
-        "description": "Return Wazuh remoted statistical information",
+        "description": "Return quintom remoted statistical information",
         "summary": "Get remoted stats",
         "tags": [
           "manager"
@@ -4880,7 +4880,7 @@
       {
         "name": "/manager/stats/weekly",
         "documentation": "https://documentation.wazuh.com/current/user-manual/api/reference.html#operation/api.controllers.manager_controller.get_stats_weekly",
-        "description": "Return Wazuh statistical information per week. Each number in the averages field represents the average of alerts per hour for that specific day",
+        "description": "Return quintom statistical information per week. Each number in the averages field represents the average of alerts per hour for that specific day",
         "summary": "Get stats by week",
         "tags": [
           "manager"
@@ -4908,7 +4908,7 @@
         "name": "/manager/status",
         "documentation": "https://documentation.wazuh.com/current/user-manual/api/reference.html#operation/api.controllers.manager_controller.get_status",
         "description": "Return the status of all Wazuh daemons",
-        "summary": "Get the Wazuh manager status",
+        "summary": "Get the quintom manager status",
         "tags": [
           "manager"
         ],
@@ -5068,7 +5068,7 @@
         "name": "/rules",
         "documentation": "https://documentation.wazuh.com/current/user-manual/api/reference.html#operation/api.controllers.rules_controller.get_rules",
         "description": "Return a list containing information about each rule such as file where it's defined, description, rule group, status, etc",
-        "summary": "Get information about a list of Wazuh rules",
+        "summary": "Get information about a list of quintom rules",
         "tags": [
           "rules"
         ],
@@ -5463,7 +5463,7 @@
       {
         "name": "/rules/requirement/:requirement",
         "documentation": "https://documentation.wazuh.com/current/user-manual/api/reference.html#operation/api.controllers.rules_controller.get_rules_requirement",
-        "description": "Return all specified requirement names defined in the Wazuh ruleset",
+        "description": "Return all specified requirement names defined in the quintom ruleset",
         "summary": "Get all specified requirements",
         "tags": [
           "rules"
@@ -7908,7 +7908,7 @@
           },
           {
             "name": "version",
-            "description": "Wazuh version to upgrade to",
+            "description": "quintom version to upgrade to",
             "schema": {
               "type": "string"
             }
@@ -7955,7 +7955,7 @@
         "query": [
           {
             "name": "file_path",
-            "description": "Full path to the WPK file. The file must be on a folder on the Wazuh's installation directory (by default, <code>/var/ossec</code>)",
+            "description": "Full path to the WPK file. The file must be on a folder on the quintom's installation directory (by default, <code>/var/ossec</code>)",
             "required": true,
             "schema": {
               "type": "string",
@@ -8617,7 +8617,7 @@
           },
           {
             "name": "path",
-            "description": "Filepath to upload/delete file. (Relative to wazuh installation folder)",
+            "description": "Filepath to upload/delete file. (Relative to quintom installation folder)",
             "required": true,
             "schema": {
               "type": "string",
@@ -8645,8 +8645,8 @@
       {
         "name": "/manager/restart",
         "documentation": "https://documentation.wazuh.com/current/user-manual/api/reference.html#operation/api.controllers.manager_controller.put_restart",
-        "description": "Restart the wazuh manager",
-        "summary": "Restart the wazuh manager",
+        "description": "Restart the quintom manager",
+        "summary": "Restart the quintom manager",
         "tags": [
           "manager"
         ],
@@ -9859,7 +9859,7 @@
         "query": [
           {
             "name": "path",
-            "description": "Filepath to upload/delete file. (Relative to wazuh installation folder)",
+            "description": "Filepath to upload/delete file. (Relative to quintom installation folder)",
             "required": true,
             "schema": {
               "type": "string",
@@ -10041,7 +10041,7 @@
         "query": [
           {
             "name": "path",
-            "description": "Filepath to upload/delete file. (Relative to wazuh installation folder)",
+            "description": "Filepath to upload/delete file. (Relative to quintom installation folder)",
             "required": true,
             "schema": {
               "type": "string",
