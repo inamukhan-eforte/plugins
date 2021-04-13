@@ -17,11 +17,11 @@ export default (kibana) => {
   return new kibana.Plugin({
     require: ['kibana', 'elasticsearch'],
     id: 'wazuh',
-    name: 'quintom',
+    name: 'wazuh',
     uiExports: {
       app: {
         id: 'wazuh',
-        title: 'quintom',
+        title: 'wazuh',
         description: 'quintom app for Kibana',
         icon: 'plugins/wazuh/img/icon_blue.png',
         main: 'plugins/wazuh/app'
