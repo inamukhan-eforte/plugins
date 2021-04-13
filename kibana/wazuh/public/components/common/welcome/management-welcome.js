@@ -1,7 +1,7 @@
 /*
- * Wazuh app - React component for building the management welcome screen.
+ * Quintom app - React component for building the management welcome screen.
  *
- * Copyright (C) 2015-2020 Wazuh, Inc.
+ * Copyright (C) 2021 Quintom.
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -70,7 +70,7 @@ class ManagementWelcome extends Component {
                       }
                       title="Rules"
                       onClick={() => this.switchSection('rules')}
-                      description="Manage your Wazuh cluster rules."
+                      description="Manage your Quintom cluster rules."
                     />
                   </EuiFlexItem>
                   <EuiFlexItem>
@@ -86,7 +86,7 @@ class ManagementWelcome extends Component {
                       }
                       title="Decoders"
                       onClick={() => this.switchSection('decoders')}
-                      description="Manage your Wazuh cluster decoders."
+                      description="Manage your Quintom cluster decoders."
                     />
                   </EuiFlexItem>
                 </EuiFlexGroup>
@@ -104,7 +104,7 @@ class ManagementWelcome extends Component {
                       }
                       title="CDB lists"
                       onClick={() => this.switchSection('lists')}
-                      description="Manage your Wazuh cluster CDB lists."
+                      description="Manage your Quintom cluster CDB lists."
                     />
                   </EuiFlexItem>
                   <EuiFlexItem>
@@ -134,7 +134,7 @@ class ManagementWelcome extends Component {
                       }
                       title="Configuration"
                       onClick={() => this.switchSection('configuration')}
-                      description="Manage your Wazuh cluster configuration."
+                      description="Manage your Quintom cluster configuration."
                     />
                   </EuiFlexItem>
                   <EuiFlexItem />
@@ -154,7 +154,7 @@ class ManagementWelcome extends Component {
                       }
                       title="Status"
                       onClick={() => this.switchSection('status')}
-                      description="Manage your Wazuh cluster status."
+                      description="Manage your Quintom cluster status."
                     />
                   </EuiFlexItem>
                   <EuiFlexItem>
@@ -170,7 +170,7 @@ class ManagementWelcome extends Component {
                       }
                       title="Cluster"
                       onClick={() => this.switchSection('monitoring')}
-                      description="Visualize your Wazuh cluster."
+                      description="Visualize your Quintom cluster."
                     />
                   </EuiFlexItem>
                 </EuiFlexGroup>
@@ -184,7 +184,7 @@ class ManagementWelcome extends Component {
                       }
                       title="Logs"
                       onClick={() => this.switchSection('logs')}
-                      description="Logs from your Wazuh cluster."
+                      description="Logs from your Quintom cluster."
                     />
                   </EuiFlexItem>
                   <EuiFlexItem>
@@ -200,7 +200,7 @@ class ManagementWelcome extends Component {
                       }
                       title="Reporting"
                       onClick={() => this.switchSection('reporting')}
-                      description="Check your stored Wazuh reports."
+                      description="Check your stored Quintom reports."
                     />
                   </EuiFlexItem>
                 </EuiFlexGroup>
@@ -214,7 +214,7 @@ class ManagementWelcome extends Component {
                       }
                       title="Statistics"
                       onClick={() => this.switchSection('statistics')}
-                      description="Information about the Wazuh environment"
+                      description="Information about the Quintom environment"
                     />
                   </EuiFlexItem>
                   <EuiFlexItem>
