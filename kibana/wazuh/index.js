@@ -21,7 +21,7 @@ export default (kibana) => {
     uiExports: {
       app: {
         id: 'wazuh',
-        title: 'wazuh',
+        title: '',
         description: 'quintom app for Kibana',
         icon: 'plugins/wazuh/img/icon_blue.png',
         main: 'plugins/wazuh/app'
